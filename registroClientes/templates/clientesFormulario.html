@@ -71,39 +71,19 @@ fieldset.grupo .campo {
     background: #E0E0F8;
 }
 
-.botao {
-    font-size: 1.2em;
-    background: #59429d;
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-.botao:hover {
-    background: #CCBBFF;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
-}
 
 </style>
 </head>
     <body>
         <div>
-            <h1 id="titulo">Cadastro Clientes</h1>
-            <p id="subtitulo">Preencha as informações</p>
+            <h1 id="titulo">Editar Cliente</h1>
+            <p id="subtitulo">Edite as informações</p>
             <br>
         </div>
         <form method="POST">
             {% csrf_token %}
             {{ formulario }}
+            <button class="botao" type="submit" onsubmit="">Salvar</button>
             {% if clientes %}
                 <a class="btn-btn-primary" href="{% url 'delete_cliente' clientes.id %}" role="button" style="text-align: center.">Delete</a>
             {% endif %}
