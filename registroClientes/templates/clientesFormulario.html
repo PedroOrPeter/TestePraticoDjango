@@ -31,6 +31,8 @@ body {
     font-size: 1em;
     background-color: #F0F8FF;
     font-family: sans-serif;
+    margin-left: 36%;
+    margin-top: 2%;
     justify-content: center;
 }
 
@@ -45,15 +47,7 @@ input, select, textarea, button {
     display: table;
 }
 
-.campo {
-    margin-bottom: 1em;
-}
 
-.campo label{
-    margin-bottom: 0.2em;
-    color: #59429d;
-    display: block;
-}
 
 fieldset.grupo .campo {
     float: left;
@@ -71,7 +65,49 @@ fieldset.grupo .campo {
     background: #E0E0F8;
 }
 
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
 
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botaoo {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 51%;
+    left: 40%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botaoo:hover{
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
 </style>
 </head>
     <body>
@@ -82,13 +118,14 @@ fieldset.grupo .campo {
         </div>
         <form method="POST">
             {% csrf_token %}
+
             {{ formulario }}
             <button class="botao" type="submit" onsubmit="">Salvar</button>
             {% if clientes %}
-                <a class="btn-btn-primary" href="{% url 'delete_cliente' clientes.id %}" role="button" style="text-align: center.">Delete</a>
+                <a class="botaoo" href="{% url 'delete_cliente' clientes.id %}" role="button" style="text-align: center.">Delete</a>
             {% endif %}
-
         </form>
+
 </body>
 </html>
 
