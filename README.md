@@ -12,6 +12,4 @@ o cadasto de um novo cliente. 😉
 
 
 # *Em construção:*
--> html (melhoria na página de edição de dados) 💀
--> API implementada ✔️
--> Crud Funcionando ✔️
+
