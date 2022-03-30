@@ -27,7 +27,7 @@
 
                 <div class="campo">
                     <label for="id_sobrenome">Sobrenome</label>
-                    <input type="text" name="sobrenome" maxlength="70 " required id="id_sobrenome" placeholder="Sobrenome">
+                    <input type="text" name="sobrenome" maxlength="70 " required id="id_sobrenome" placeholder="Sobrenome" value="{{ sobrenome }}">
                 </div>
 
             </fieldset>
@@ -59,11 +59,11 @@
             </fieldset>
 
             <div class="campo">
-                <label for="id_observacao"></label>
+                <label for="id_observacao">Observação</label>
                 <textarea name="observacao" cols="40" rows="10" maxlength="1000" id="id_observacao" placeholder="Fale sobre algo que tenha que ser notado"></textarea>
             </div>
 
-            <button class="botao" type="submit" onsubmit="">Salvar</button>
+            <button class="botao" type="submit" onsubmit="">Cadastrar</button>
 
         </form>
 </body>
