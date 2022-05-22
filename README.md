@@ -14,4 +14,5 @@ o cadasto de um novo cliente. 😉
 # *Em construção:*
 
 Erro na estilização. 
-Botão de enviar em lugar errado( A ser arrumado)
+Página inicial comprimida para dispositivos 720p ou menor
+Página de editar dados não está muito legal
