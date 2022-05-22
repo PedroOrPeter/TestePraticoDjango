@@ -14,4 +14,4 @@ o cadasto de um novo cliente. 😉
 # *Em construção:*
 
 Erro na estilização. 
-Página inicial comprimida para dispositivos 720p<
+Página inicial comprimida para dispositivos 720p ou menor
