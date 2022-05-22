@@ -15,3 +15,4 @@ o cadasto de um novo cliente. 😉
 
 Erro na estilização. 
 Página inicial comprimida para dispositivos 720p ou menor
+Página de editar dados não está muito legal
