@@ -13,3 +13,5 @@ o cadasto de um novo cliente. 😉
 
 # *Em construção:*
 
+Erro na estilização. 
+Botão de enviar em lugar errado( A ser arrumado)
